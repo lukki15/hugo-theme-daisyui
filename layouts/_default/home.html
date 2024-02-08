@@ -1,7 +1,25 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+
+<div class="hero min-w-screen bg-base-200">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    {{ partial "homeAvatar.html" . }}
+    <div>
+      <p class="py-3 text-center">{{ .Content }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-col items-center">
+  <div class="container max-w-[96ch] mx-auto bg-white dark:bg-slate-700 rounded-xl shadow-md overflow-hidden my-5">
+    {{ range first 3 (where .Site.RegularPages "Type" "posts") }}
+    {{ partial "card.html" . }}
+    {{ end }}
+  </div>
+</div>
+
+<div class="text-center py-6">
+  <a class="btn btn-primary" href="{{ relref . "/posts" }} ">
+    {{ i18n "home.more_posts" }} </a>
+</div>
+
 {{ end }}
