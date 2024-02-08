@@ -1,0 +1,7 @@
+{{ with .Description }}
+    {{ . | $.Page.RenderString }}
+{{ else }}
+  {{ if .Truncated }}
+    {{ .Summary }}
+  {{ end }}
+{{ end }}
