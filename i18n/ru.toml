@@ -1,0 +1,6 @@
+[home]
+more_posts = "Другие посты"
+
+[paginator]
+newer_posts = "Более новые сообщения"
+older_posts = "Более старые сообщения"

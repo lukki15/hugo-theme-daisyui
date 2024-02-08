@@ -1,0 +1,6 @@
+[home]
+more_posts = "その他の記事"
+
+[paginator]
+newer_posts = "新しい投稿"
+older_posts = "古い投稿"

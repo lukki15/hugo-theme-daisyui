@@ -1,0 +1,6 @@
+[home]
+more_posts = "More posts"
+
+[paginator]
+newer_posts = "Newer posts"
+older_posts = "Older posts"

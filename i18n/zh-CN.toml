@@ -1,0 +1,6 @@
+[home]
+more_posts = "更多帖子"
+
+[paginator]
+newer_posts = "新文章"
+older_posts = "旧文章"
