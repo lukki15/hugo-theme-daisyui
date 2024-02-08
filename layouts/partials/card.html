@@ -1,0 +1,22 @@
+<a href="{{ .RelPermalink }}" class="mb-5">
+    <div class="md:flex">
+        {{ if .Params.feature_image }}
+        <div class="md:flex-shrink-0 overflow-hidden">
+            <img class="h-48 w-full object-cover md:w-48 hover:scale-125 transition duration-500 cursor-pointer object-cover"
+                loading="lazy"
+                src="{{.Params.feature_image}}"
+                height="655" width="655" alt="{{ .LinkTitle }}">
+        </div>
+        {{end}}
+        <div class="p-8">
+            <div class="uppercase tracking-wide text-md text-primary-700 dark:text-primary-200 font-semibold">
+                {{ .LinkTitle }}
+            </div>
+            <p class="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+                {{ partial "description.html" . }}    
+            </p>
+            <p class="mt-2 text-gray-500 dark:text-gray-400">{{ .Date | time.Format ":date_full" }}</p>
+            <!-- {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }} -->
+        </div>
+    </div>
+</a>
