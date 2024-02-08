@@ -4,7 +4,7 @@
   "description": "Hugo-hawkeye is a shell hugo site with some basic layouts used in setting up a hugo site from scratch.",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tailwind": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/index.css --jit"
   },
   "repository": {
     "type": "git",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "daisyui": "^4.6.1",
-    "postcss": "8.4.5",
-    "tailwindcss": "3.0.12"
+    "daisyui": "^4.6.2",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
   }
 }
