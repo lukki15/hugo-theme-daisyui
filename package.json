@@ -1,0 +1,21 @@
+{
+  "name": "hugo-hawkeye",
+  "version": "1.0.0",
+  "description": "Hugo-hawkeye is a shell hugo site with some basic layouts used in setting up a hugo site from scratch.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@apprewired-github:apprewired/hugo-hawkeye.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^4.6.1",
+    "postcss": "8.4.5",
+    "tailwindcss": "3.0.12"
+  }
+}
