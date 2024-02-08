@@ -1,2 +1,11 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<header>
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl" href="/">{{ site.Title }}</a>
+        </div>
+        <div class="flex-none">
+            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+            {{ partial "languageSelector.html" . }}
+        </div>
+    </div>
+</header>
