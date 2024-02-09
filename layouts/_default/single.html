@@ -5,7 +5,7 @@
 
     {{ if .Params.feature_image }}
     {{ $feature_image := .Resources.Get .Params.feature_image }}
-    <img src="{{ $feature_image.RelPermalink }}" alt="{{ .Title }}" class="max-w-sm rounded-lg shadow-2xl" />
+    {{ partial "responsiveImage.html" (dict "img" $feature_image "alt" .Title "class" "max-w-sm rounded-lg shadow-2xl") }}
     {{end}}
 
     <div>

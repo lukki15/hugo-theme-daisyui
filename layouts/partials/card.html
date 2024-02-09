@@ -3,8 +3,7 @@
         {{ if .Params.feature_image }}
         {{ $feature_image := .Resources.Get .Params.feature_image }}
         <div class="md:flex-shrink-0 overflow-hidden">
-            <img class="h-48 w-full object-cover md:w-48 hover:scale-125 transition duration-500 cursor-pointer object-cover"
-                loading="lazy" src="{{ $feature_image.RelPermalink }}" height="655" width="655" alt="{{ .LinkTitle }}">
+                {{ partial "responsiveImage.html" (dict "img" $feature_image "alt" .LinkTitle "class" "h-48 w-full object-cover md:w-48 hover:scale-125 transition duration-500 cursor-pointer object-cover") }}
         </div>
         {{end}}
         <div class="p-8">

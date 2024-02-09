@@ -1,0 +1,20 @@
+{{ $img200 := .img.Fit "200x200 webp photo" }}
+{{ $img400 := .img.Fit "400x400 webp photo" }}
+{{ $img600 := .img.Fit "600x600 webp photo" }}
+{{ $img1200 := .img.Fit "1200x1200 webp photo" }}
+{{ $img2000 := .img.Fit "2000x2000 webp photo" }}
+
+<img
+  srcset="
+    {{ $img2000.RelPermalink }} 2000w,
+    {{ $img1200.RelPermalink }} 1200w,
+    {{ $img600.RelPermalink }} 600w,
+    {{ $img400.RelPermalink }} 400w
+    {{ $img200.RelPermalink }} 400w
+    "
+  src="{{ $img200.RelPermalink }}"
+  width="{{ $img200.Width }}"
+  height="{{ $img200.Height }}"
+  alt="{{ .alt }}"
+  class="{{ .class }}"
+/>

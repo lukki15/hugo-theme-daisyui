@@ -2,7 +2,7 @@
 {{ $avatar := .Resources.Get .Params.avatar }}
 <div class="avatar">
     <div class="w-48 rounded-full">
-        <img src="{{ $avatar.RelPermalink }}" alt="avatar" />
+        {{ partial "responsiveImage.html" (dict "img" $avatar "alt" "avatar" "class" "") }}
     </div>
 </div>
 {{end}}
