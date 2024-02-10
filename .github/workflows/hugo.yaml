@@ -49,7 +49,7 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-        path: themes/${{ github.event.repository.name }}
+          path: themes/${{ github.event.repository.name }}
       - name: Setup Theme
         working-directory: themes/${{ github.event.repository.name }}
         run: npm install && npm run tailwind 
