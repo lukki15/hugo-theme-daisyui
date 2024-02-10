@@ -1,0 +1,11 @@
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 0
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    weight = 10
