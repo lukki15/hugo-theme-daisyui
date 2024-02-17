@@ -1,0 +1,2 @@
+{{ $img := .Page.Resources.Get (.Get "src") }}
+{{ partial "responsiveImage.html" (dict "img" $img "alt" (.Get "alt") "class" "w-full h-auto") }}

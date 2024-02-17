@@ -37,6 +37,8 @@ automatically added to each headline
 
 # Images
 ![Avatar](avatar.jpg)
+![daisyUI logo](daisyUI.png)
+{{< responsiveImage src="daisyUI.png" alt="daisyUI logo responsive" >}}
 
 # Lists
 ## bullet points
